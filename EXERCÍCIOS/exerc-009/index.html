@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas (a ordem faz a diferença)</h2>
+    <!-- i, A, a, I, 1 -->
+    <ol>
+        <li>Acordar
+        <li>Ligar para o João
+        <li>Tomar Café
+        <li>Escovar os Dentes
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Ir para a faculdade</li>
+        <li>Dormir</li>
+        <li>Acordar</li>
+    </ol>
+    <ol type="1" start="4"><!--lista do tipo numérica iniciando a partir do 4-->
+<li>Acordar
+        <li>Ligar para o João
+        <li>Tomar Café
+        <li>Escovar os Dentes
+    </ol>
+    <ol type="I"><!--lista do tipo alfabética maíscula-->
+        <li>Acordar
+        <li>Ligar para o João
+        <li>Tomar Café
+        <li>Escovar os Dentes
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Ir para a faculdade</li>
+        <li>Dormir</li>
+        <li>Acordar</li>
+
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="circle"> <!== disc, square, circle==>
+        <li>Acordar</li>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Óleo</li>
+    </ul>
+     <ul type="square">
+        <li>Arcordar
+            <li>Pão
+            <li>Leite</li>
+            <li>Alface</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Óleo</li>
+    </ul>
+     <ul type="disc">
+        <li>Arcordar
+            <li>Pão
+            <li>Leite</li>
+            <li>Alface</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Óleo</li>
+    </ul>
+    <h2>Juntando Listas versão 1.0</h2>
+
+    <h2>Minhas Linguagens Preferidas</h2>
+    <ol>
+        <li>Antigas</li>
+        <br>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <br>
+        <li>Novas</li>
+        <br>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Cotlin</li>
+        </ol>
+
+    </ol>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3 </li>
+                <li>Mario:Lost Levels</li>
+            </ul>
+            <li>Domkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <!--O elemento HTML Definition List (<dl>) engloba uma lista de pares de termos e descrições. Um uso comum para este elemento é para implementar um glossário ou exibir metadados(uma lista de pares chave e valor).-->
+            <dt>Termo</dt>
+            <dt>HTML</dt>
+            <dd>Descrição</dd>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site</dd>
+            <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>
