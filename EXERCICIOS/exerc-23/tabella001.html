@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+        table {
+
+            width: 300px;
+            border-collapse:collapse;
+            border: 3px solid rgb(224, 12, 12);/* borda da tabela */
+               }
+        td{
+            border: 1px solid black;/*borda do dado da tabela */
+            padding: 5px;
+        }
+        td.dado{
+            background-color:yellow
+        }
+        tr.linha{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+        TABLE ROW (<tr>)= linha de tabela
+        TABLE HEADER (<th>) = cabeçalho de tabela
+        TABLE DATA (<td>) = dado de tabela
+    -->
+        <table>
+            <tr> <!--  Primeira linha da tabela -->
+                <td>A1</td> <!-- Primeira coluna da tabela -->
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr> <!--  Segunda linha da tabela -->
+                <td>A2</td> <!-- Primeira coluna da tabela -->
+                <td>B2</td> <!-- Dado da tabela -->
+                <td>C2</td>
+            </tr>
+            <tr class="linha"> <!--  Terceira linha da tabela -->
+                <td>A3</td> <!-- Primeira coluna da tabela -->
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr> <!--  Quarta linha da tabela -->
+                <td class="dado">A4</td> <!-- Primeira coluna da tabela -->
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+
+    
+</body>
+</html>
