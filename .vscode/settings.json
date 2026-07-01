@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.quickSuggestions": {
+
+        "other": "offWhenInlineCompletions",
+        "comments": "off",
+        "strings": "off"
+    }
+}

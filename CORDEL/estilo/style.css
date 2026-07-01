@@ -4,14 +4,16 @@
     font-family: Passion;
     src: url(..fontes/PassionOne/PassionOne-Regular.ttf)format(truetype);
 }
+
 @font-face {
-    
     font-family: Sriracha;
     src:url(../fontes/Sriracha/Sriracha-Regular.ttf) format(truetype) ;
 }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+*/
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
@@ -59,6 +61,9 @@ section{
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
+section > p {
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -66,11 +71,32 @@ section.normal{
 section.imagem{
     background-color: rgb(56, 52, 52);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(36, 23, 23, 0.404);
+    text-shadow:1px 1px 0px black;
+    
+}
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+   
+
+
+
 }
 footer{
     background-color: black;
