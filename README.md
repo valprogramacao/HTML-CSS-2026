@@ -8,5 +8,5 @@ Retomada do Curso HTML
 Clique nos links abaixo para visualizar o resultado de cada projeto diretamente no seu navegador:
 
 
-- 📖 [Projeto Cordel](./CORDEL/)
+- 📖 [Projeto Cordel](https://valprogramacao.github.io/cordel-novo/)
 - 📱 [Desafio Android]https://valprogramacao.github.io/android-novo/
