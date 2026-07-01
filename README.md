@@ -9,4 +9,4 @@ Clique nos links abaixo para visualizar o resultado de cada projeto diretamente 
 
 
 - 📖 [Projeto Cordel](https://valprogramacao.github.io/cordel-novo/)
-- 📱 [Desafio Android]https://valprogramacao.github.io/android-novo/
+- 📱 [Desafio Android](https://valprogramacao.github.io/android-novo/)
