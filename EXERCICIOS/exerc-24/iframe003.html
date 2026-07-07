@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        iframe#tela{
+            width: 95vw;
+            border: 1px solid black;
+            height: 400px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha !</h1>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <ul>
+        <li><a href="paginas_ extras/pag-001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas_ extras/pag-002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas_ extras/pag-003.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <iframe id="tela"  name= "frame" srcdoc="<h1>Escolha uma das opções acima !</h1> 
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum maiores numquam quod nesciunt at, labore amet sint facere repellat sit aliquam harum, praesentium repudiandae corrupti doloremque enim illum excepturi itaque?</h1><img src='imagens_extras/coracao.png' alt='Imagem de exemplo'>" frameborder="1">
+    <p>Infelizmente seu navegador não é compatível com iframes.</p>
+    </iframe>
+    <p>
+        lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+</body>
+</html>
