@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu Quarto Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+            </p>
+        </fieldset>
+        <!-- Estudar mais sobre Regex (expressóes regulares)   não precisa mais colocar o ^ e nem o $. Para resumir, e ficar facil: [0-9] -> Um digito de 0 a 9, ou seja, mesmo que a pessoa digite letra ou simbolo, não reconhecerá, e não avança o formulario. A pessoa tem que digitar entre o 0 a 9. E o {11} -> é a quantidade de vezes que você pode repetir. Exemplo: pattern = "[0-9]{11}" - > 6199999-9999  (11 repetições de 0 a 9)-->
+        <p>
+            <input type="submit" value="Enviar"></p>
+        <p>
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
