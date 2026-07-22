@@ -1,0 +1,81 @@
+/* ==========================================================
+   ESTILOS BASE / MOBILE FIRST
+   ========================================================== */
+/* Esconde todas as imagens responsivas por padrão */
+img#phone, 
+img#tablet, 
+img#pc, 
+img#tv, 
+img#print {
+    display: none;
+}
+
+/* Mostra apenas a imagem padrão de celular no mobile */
+img#phone {
+    display: block;
+}
+
+
+/* ==========================================================
+   MEDIA QUERIES (TELAS)
+   ========================================================== */
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone { display: none; }
+    img#tablet { display: block; }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone { display: none; }
+    img#pc { display: block; }
+}
+
+/* GRANDES TELAS (TV / MONITORES ULTRA-WIDE) */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 700px;
+    }
+    img#phone { display: none; }
+    img#tv { display: block; }
+}
+
+
+/* ==========================================================
+   IMPRESSÃO
+   ========================================================== */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background: none; /* Garante que nenhum fundo consuma tinta */
+    }
+    main {
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+        display: block;
+        margin-top: 10px;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    
+    /* Exibe a imagem de impressão caso exista */
+    img#phone, img#tablet, img#pc, img#tv { display: none; }
+    img#print { display: block; }
+}

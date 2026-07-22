@@ -18,12 +18,26 @@ Desktop e Laptops:  1025px - 1600px
 TV e Monitores Ultra-Wide:  1601px em diante
 */
 @media print { /* IMPRESSÃO*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
     body{
         background-image: url(../imagens/back-print.jpg);/*desnecessário*/
     }
+    main {
+        border: 2px solid black;
+    }
+    main::after{
+        content: 'Essa impressão foi feita através do site www.cursoem video.com';
+        text-decoration: overline;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
 
 }
-@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 991px) { /*TABLET*/
     body {
         background-image:url(../imagens/back-tablet.jpg);
     }
@@ -33,7 +47,7 @@ TV e Monitores Ultra-Wide:  1601px em diante
     img#pc{display: none;}
     img#print{display: none;}
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1199px) { /*DESKTOP */
     body {
         background-image: url(../imagens/back-pc.jpg);
     }
@@ -45,7 +59,7 @@ TV e Monitores Ultra-Wide:  1601px em diante
 
 }
 
-@media screen and (min-whidth: 1200px) {/*GRANDES TELAS*/
+@media screen and (min-width: 1200px) {/*GRANDES TELAS*/
     body {
         background-image: url(../imagens/back-tv.jpg);
     }
