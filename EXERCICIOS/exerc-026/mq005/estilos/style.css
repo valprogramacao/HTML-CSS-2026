@@ -31,7 +31,7 @@ span#burguer:hover {
     cursor: pointer;
 }
 menu {
-    display: none;
+    display: block;
 }
 menu > ul {
     list-style-type: none;/*para sumir com as bolinhas*/

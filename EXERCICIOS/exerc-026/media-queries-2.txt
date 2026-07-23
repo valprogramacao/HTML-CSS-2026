@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site</h1>
+
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugiat,
+                obcaecati odio tempora, nisi possimus asperiores dignissimos
+                accusantium voluptate culpa beatae placeat corrupti accusamus
+                laborum? Vitae ipsa optio fugiat asperiores.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium atque reprehenderit quisquam id voluptate quas
+                similique qui quaerat iusto unde explicabo ex aut, porro
+                perferendis. Nemo doloremque commodi obcaecati ratione?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem a culpa unde, libero pariatur quidem corrupti
+                adipisci, voluptate deserunt, quo soluta iusto dolor
+                laudantium doloribus aut error placeat omnis illum!
+            </p>
+        </article>
+    </main>
+
+    <script>
+        // Seleciona o menu
+        const itens = document.getElementById("itens");
+
+        // Executa quando a tela é redimensionada
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = "block";
+            } else {
+                itens.style.display = "none";
+            }
+        }
+
+        // Abre e fecha o menu no celular
+        function clickMenu() {
+            if (itens.style.display === "block") {
+                itens.style.display = "none";
+            } else {
+                itens.style.display = "block";
+            }
+        }
+
+        // Define o estado inicial do menu ao carregar a página
+        mudouTamanho();
+    </script>
+
+</body>
+</html>
+
+Correções realizadas
+✅ Corrigido onresize="mudoutamanho" para onresize="mudouTamanho()".
+✅ Padronizado o nome da função para mudouTamanho().
+✅ Declarada a variável itens com document.getElementById("itens").
+✅ Corrigidos os textos "Opcão" para "Opção".
+✅ Melhorada a indentação para facilitar a leitura.
+✅ Adicionada a chamada mudouTamanho(); ao carregar a página para que o menu já fique no estado correto.
+
+Esse código deve funcionar corretamente tanto em telas pequenas (menu hambúrguer) quanto em telas maiores (menu sempre visível), desde que seus arquivos style.css e media-query.css estejam configurados corretamente.
