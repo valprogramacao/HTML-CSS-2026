@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible-Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            /*para column tem que usar a altura(height)do container para funcionar */
+            display: flex;
+            flex-flow: row wrap-reverse;
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex:auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner"> <!--PAI-->
+     <!--FILHO-->    <div class="item">Exempo de Bloco A</div>  <!-- Para duplicar uma linha dentro do código (ou uma parte grande selecionada), usem shift+alt+seta -->
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
+
+    </div>
+</body>
+</html>
