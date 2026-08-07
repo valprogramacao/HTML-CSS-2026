@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible-Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow:row nowrap;
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis:200px;
+            /*flex-shrink: 1;  (valor padrão 1)Permite que o item encolha, caso necessário 
+
+            flex-grow: 1; /* (valor padrão 0)Permite que o item cresça, caso necessário */
+            
+        }
+        div#cxA {
+            flex-shrink: 0;  /* Impede que o item encolha, caso necessário */
+            flex-grow: 1;
+        }
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 4;  /* Permite que o item cresça 4 vezes,proporcionalmente ao primeiro item, caso necessário */
+        }
+        div#cxC {
+            flex-shrink: 6;  /* Permite que o item encolha 6 vezes, proporcionalmente ao primeiro item, caso necessário */
+            flex-grow: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner"> <!--PAI-->
+     <!--FILHO-->    <div class="item" id="cxA">A</div>  <!-- Para duplicar uma linha dentro do código (ou uma parte grande selecionada), usem shift+alt+seta -->
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+        
+
+    </div>
+</body>
+</html>
